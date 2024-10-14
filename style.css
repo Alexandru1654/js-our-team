@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: red;
+}
+
+card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    height: 30px;
+    object-fit: cover;
+}
+

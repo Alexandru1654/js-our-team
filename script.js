@@ -37,4 +37,23 @@ const teamMembers = [
   }
 ];
 
+// Container where cards will be added
+const teamContainer = document.getElementById("team-container");
+
+// Function to create team cards
+teamMembers.forEach(member => {
+    const memberCard = `
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+        <img src="${member.img}" class="card-img-top" alt="${member.name}">
+        <div class="card-body">
+            <h5 class="card-title">${member.name}</h5>
+            <p class="card-text">${member.role}</p>
+            <a href="mailto:${member.email}" class="btn btn-primary">Contact</a>
+        </div>
+        </div>
+    </div>
+    `;
+    teamContainer.innerHTML += memberCard;
+});
 
